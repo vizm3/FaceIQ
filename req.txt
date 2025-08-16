@@ -1,0 +1,5 @@
+streamlit
+deepface
+tf-keras
+opencv-python
+Pillow
