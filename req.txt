@@ -3,3 +3,7 @@ deepface
 tf-keras
 opencv-python
 Pillow
+numpy
+pandas
+tensorflow  # Only needed if you want to use TensorFlow backend in DeepFace
+torch       # Only needed if you want to use PyTorch backend in DeepFace
