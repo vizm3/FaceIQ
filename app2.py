@@ -6,6 +6,13 @@ import numpy as np
 import pandas as pd
 from io import BytesIO
 
+#---- for page title --- 
+st.set_page_config(
+    page_title="FaceIQ",
+    layout="wide",
+    page_icon="🧑‍🦳"
+)
+
 # --- THEME DETECTION ---
 theme_base = st.get_option("theme.base") or "dark"
 is_dark = theme_base == "dark"
@@ -345,4 +352,5 @@ else:
     if camera_image:
         image_obj = Image.open(camera_image).convert("RGB")
         process_image_and_render(image_obj)
+
 st.markdown("</div>", unsafe_allow_html=True)
